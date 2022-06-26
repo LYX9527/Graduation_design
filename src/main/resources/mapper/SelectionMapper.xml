@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.orange.webFramework.mapper.SelectionMapper">
+
+    <resultMap id="BaseResultMap" type="com.orange.webFramework.bean.Selection">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="sid" column="sid" jdbcType="INTEGER"/>
+            <result property="options" column="options" jdbcType="VARCHAR"/>
+            <result property="isRight" column="is_right" jdbcType="INTEGER"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,sid,options,
+        is_right,del_flag
+    </sql>
+
+</mapper>

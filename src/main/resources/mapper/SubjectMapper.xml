@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.orange.webFramework.mapper.SubjectMapper">
+
+    <resultMap id="BaseResultMap" type="com.orange.webFramework.bean.Subject">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="topic" column="topic" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="INTEGER"/>
+            <result property="classType" column="class_type" jdbcType="INTEGER"/>
+            <result property="delFlag" column="del_flag" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,topic,type,
+        class_type,del_flag
+    </sql>
+</mapper>
